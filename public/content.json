@@ -1,0 +1,295 @@
+{
+    "intro": {
+        "title": "60 Jahre Roswitha",
+        "subtitle": "Die große Nähprüfung",
+        "slides": [
+            {
+                "id": "welcome",
+                "text": "",
+                "image": "/assets/images/header_final.png",
+                "duration": 999999
+            }
+        ]
+    },
+    "exam": {
+        "title": "Die Theorie",
+        "introText": "Beweise dein Können um den Meistertitel zu erlangen!",
+        "questions": [
+            {
+                "id": "q1",
+                "type": "choice",
+                "question": "Kundschaft kommt und möchte dieses Paar Socken flicken lassen, was sagst du?",
+                "options": [
+                    "Na klar, das mach ich sofort – ich liebe Herausforderungen!",
+                    "Ich könnte sie höchstens noch für eine Puppenkleidung verwenden.",
+                    "Das zahlt sich wirklich nicht mehr aus, die sind nicht mehr zu retten.",
+                    "Kein Problem – ich häkle einfach eine neue Sohle dran!"
+                ],
+                "correctIndex": 2,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            },
+            {
+                "id": "q2",
+                "type": "choice",
+                "question": "Wie nennt man das Werkzeug, mit dem man eine Naht wieder auftrennt?",
+                "options": [
+                    "Trennungsanwalt",
+                    "Nahtauftrenner",
+                    "Fadenjäger",
+                    "Geduldsprüfer"
+                ],
+                "correctIndex": 1,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            },
+            {
+                "id": "q3",
+                "type": "choice",
+                "question": "Was ist beim Nähen mit der Nähmaschine besonders wichtig?",
+                "options": [
+                    "Immer Vollgas geben, sonst wird’s fad",
+                    "Finger weg von der Nadel",
+                    "Die Fäden nach Gefühl verknoten",
+                    "Währenddessen Kaffee trinken"
+                ],
+                "correctIndex": 1,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            },
+            {
+                "id": "q4",
+                "type": "choice",
+                "question": "Was machst du, wenn die Nähmaschine beim Nähen plötzlich klackert und stottert?",
+                "options": [
+                    "Freundlich zureden",
+                    "Ölfläschchen zücken und schmieren",
+                    "Schnell wegschauen",
+                    "Rober zu Hilfe rufen"
+                ],
+                "correctIndex": 3,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            },
+            {
+                "id": "q5",
+                "type": "choice",
+                "question": "Was ist das Wichtigste beim Maßnehmen?",
+                "options": [
+                    "Maßband, Augenmaß und ein Glas Wein",
+                    "Das Maßband nicht verdrehen",
+                    "Dass der Kunde nicht kitzlig ist",
+                    "Dass der Hund nicht durchs Maßband rennt"
+                ],
+                "correctIndex": 1,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            },
+            {
+                "id": "q6",
+                "type": "choice",
+                "question": "Was versteht man unter dem 'Fadenlauf'?",
+                "options": [
+                    "Wenn der Faden von der Spule hüpft",
+                    "Die Richtung der Kettfäden parallel zur Webkante",
+                    "Eine spezielle Nahtart für Sportkleidung",
+                    "Den Weg, den man zum Stoffgeschäft läuft"
+                ],
+                "correctIndex": 1,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            },
+            {
+                "id": "q7",
+                "type": "choice",
+                "question": "Wofür ist eine 'Overlock'-Maschine unverzichtbar?",
+                "options": [
+                    "Um Knöpfe automatisch anzunähen",
+                    "Zum professionellen Versäubern und Zusammennähen in einem Schritt",
+                    "Für besonders komplizierte Stickereien",
+                    "Um Kaffee während des Nähens zu kochen"
+                ],
+                "correctIndex": 1,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            },
+            {
+                "id": "q8",
+                "type": "choice",
+                "question": "Welche Nadel eignet sich am besten für Jersey-Stoffe?",
+                "options": [
+                    "Universalnadel",
+                    "Jeansnadel",
+                    "Jersey- oder Ballpoint-Nadel",
+                    "Leder-Nadel"
+                ],
+                "correctIndex": 2,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            },
+            {
+                "id": "q9",
+                "type": "choice",
+                "question": "Was bedeutet der Begriff 'Verriegeln' beim Nähen?",
+                "options": [
+                    "Die Tür zum Nähzimmer absperren",
+                    "Den Stoff mit Stecknadeln fixieren",
+                    "Den Anfang und das Ende einer Naht durch Rückwärtsnähen sichern",
+                    "Einen Reißverschluss einnähen"
+                ],
+                "correctIndex": 2,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            },
+            {
+                "id": "q10",
+                "type": "choice",
+                "question": "Was ist eine 'Zwillingsnadel'?",
+                "options": [
+                    "Zwei Nadeln, die sich immer streiten",
+                    "Eine Nadel mit zwei Spitzen für dekorative Säume",
+                    "Eine Nadel nur für Zwillinge",
+                    "Ein Ersatzteil, das man nie findet"
+                ],
+                "correctIndex": 1,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            },
+            {
+                "id": "q11",
+                "type": "choice",
+                "question": "Was ist die 'Webkante' eines Stoffes?",
+                "options": [
+                    "Der Rand, an dem der Stoff beim Weben befestigt war (franst nicht)",
+                    "Eine misslungene Naht",
+                    "Ein spezielles Webmuster",
+                    "Die Kante, die man immer abschneiden muss, weil sie hässlich ist"
+                ],
+                "correctIndex": 0,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            },
+            {
+                "id": "q12",
+                "type": "choice",
+                "question": "Wozu dient ein 'Ei' beim Bügeln?",
+                "options": [
+                    "Als kleiner Snack zwischendurch",
+                    "Zum Ausformen von runden Nähten und Abnähern",
+                    "Um die Temperatur des Bügeleisens zu testen",
+                    "Als Beschwerer für Schnittmuster"
+                ],
+                "correctIndex": 1,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            },
+            {
+                "id": "q13",
+                "type": "choice",
+                "question": "Was ist der Unterschied zwischen 'Steppen' und 'Heften'?",
+                "options": [
+                    "Steppen ist tanzen, Heften ist Büroarbeit",
+                    "Steppen ist die dauerhafte Maschinennaht, Heften eine provisorische Handnaht",
+                    "Es gibt keinen, beides hält nicht",
+                    "Heften macht man mit dem Tacker"
+                ],
+                "correctIndex": 1,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            },
+            {
+                "id": "q14",
+                "type": "choice",
+                "question": "Was passiert, wenn die Oberfadenspannung viel zu locker ist?",
+                "options": [
+                    "Die Nadel bricht ab",
+                    "Der Stoff zieht sich zusammen",
+                    "Es gibt Schlaufen auf der Unterseite des Stoffes",
+                    "Die Maschine fängt an zu singen"
+                ],
+                "correctIndex": 2,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            },
+            {
+                "id": "q15",
+                "type": "choice",
+                "question": "Was ist ein 'Abnäher'?",
+                "options": [
+                    "Jemand, der einem die Arbeit abnimmt",
+                    "Eine keilförmige Falte zur Formgebung (z.B. an der Brust)",
+                    "Ein Fehler im Stoff",
+                    "Ein Werkzeug zum Fadenabschneiden"
+                ],
+                "correctIndex": 1,
+                "explanation": "Goldrichtig!",
+                "image": "PLACEHOLDER_IMAGE_PATH"
+            }
+        ]
+    },
+    "practical": {
+        "title": "Die Praxis",
+        "tasks": [
+            {
+                "id": "p1",
+                "title": "Die Schlafmaske",
+                "instruction": "Nähe zuerst die Schlafmaske! Die Zeit läuft!",
+                "duration": 600
+            },
+            {
+                "id": "p2",
+                "title": "Stoffkunde blind",
+                "instruction": "Setze nun die Maske auf und errate die Stoffe durch Fühlen!",
+                "items": [
+                    {
+                        "text": "Musselin",
+                        "image": "/assets/images/stoffe/musselin.jpg"
+                    },
+                    {
+                        "text": "Jersey",
+                        "image": "/assets/images/stoffe/jersey.jpg"
+                    },
+                    {
+                        "text": "Vlies",
+                        "image": "/assets/images/stoffe/vlies.jpg"
+                    },
+                    {
+                        "text": "Leder",
+                        "image": "/assets/images/stoffe/leder.jpg"
+                    },
+                    {
+                        "text": "Bündel",
+                        "image": "/assets/images/stoffe/buendel.jpg"
+                    },
+                    {
+                        "text": "Wollwalk",
+                        "image": "/assets/images/stoffe/wollwalk.jpg"
+                    },
+                    {
+                        "text": "Plüsch Vlies",
+                        "image": "/assets/images/stoffe/pluesch.jpg"
+                    },
+                    {
+                        "text": "Baumwoll",
+                        "image": "/assets/images/stoffe/baumwoll.jpg"
+                    },
+                    {
+                        "text": "Ripp-Strick",
+                        "image": "/assets/images/stoffe/ripp.jpg"
+                    }
+                ]
+            },
+            {
+                "id": "p3",
+                "title": "Das Reisekissen",
+                "instruction": "Letzte Prüfung: Das Reisekissen! Die bemalten Zuschnitte der Enkelkinder liegen bereit.",
+                "duration": 600
+            }
+        ]
+    },
+    "result": {
+        "successTitle": "Herzlichen Glückwunsch!",
+        "successMessage": "Roswitha, du hast bewiesen, dass du eine wahre Meisterin bist!",
+        "certificateImage": "/assets/images/certificate_placeholder.png"
+    }
+}

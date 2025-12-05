@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #92a7a3;
+  --color-secondary: #876d88;
+  --color-background: #e3dddc;
+  --color-text: #7c7a7c;
+
+  --font-display: "Quicksand", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#e3dddc] text-[#7c7a7c] font-body antialiased overflow-hidden;
+  }
+
+  html {
+    font-size: 16px;
+    /* Reset to standard, handle sizing via classes */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-medium;
+  }
+}
+
+/* Glass panel adapted for light mode with specific user override */
+.glass-panel {
+  @apply bg-white shadow-xl rounded-3xl text-[#7c7a7c] border border-white;
+}
+
+@supports (color: color-mix(in lab, red, red)) {
+  .glass-panel {
+    background-color: #fff;
+  }
+}
+
+/* Typography Overrides for Light Mode contrast */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-[#7c7a7c] leading-none;
+}
+
+.text-beamer-title {
+  @apply text-5xl md:text-6xl font-serif tracking-tight text-[#876d88];
+}
+
+.text-beamer-body {
+  @apply text-xl md:text-2xl leading-relaxed text-[#7c7a7c];
+}
