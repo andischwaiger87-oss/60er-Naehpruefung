@@ -51,27 +51,27 @@ export const Exam = ({ data, onComplete }: Props) => {
                 />
             </div>
 
-            <div className="w-full max-w-5xl mx-auto flex flex-col gap-8">
-                <div className="glass-panel p-8 md:p-12 shadow-xl bg-white flex flex-col gap-8">
+            <div className="w-full max-w-5xl mx-auto flex flex-col gap-6 md:gap-8 pt-6 md:pt-0">
+                <div className="glass-panel p-6 md:p-12 shadow-xl bg-white flex flex-col gap-6 md:gap-8">
                     {/* Header */}
-                    <div className="flex justify-between items-end border-b pb-6 border-[#7c7a7c]/10">
+                    <div className="flex justify-between items-end border-b pb-4 md:pb-6 border-[#7c7a7c]/10">
                         <div className="flex flex-col gap-2">
-                            <span className="text-[#92a7a3] font-display font-bold tracking-widest text-sm uppercase">
+                            <span className="text-[#92a7a3] font-display font-bold tracking-widest text-xs md:text-sm uppercase">
                                 Theorieprüfung
                             </span>
-                            <h2 className="text-4xl md:text-5xl font-display font-bold text-[#876d88] leading-tight">
-                                Frage {currentIndex + 1} <span className="text-2xl text-[#7c7a7c]/40 font-normal">/ {data.questions.length}</span>
+                            <h2 className="text-3xl md:text-5xl font-display font-bold text-[#876d88] leading-tight">
+                                Frage {currentIndex + 1} <span className="text-xl md:text-2xl text-[#7c7a7c]/40 font-normal">/ {data.questions.length}</span>
                             </h2>
                         </div>
                     </div>
 
                     {/* Question */}
-                    <h3 className="text-2xl md:text-4xl font-display font-medium leading-snug text-[#7c7a7c] py-4">
+                    <h3 className="text-xl md:text-4xl font-display font-medium leading-snug text-[#7c7a7c] py-2 md:py-4">
                         {question.question}
                     </h3>
 
                     {/* Options */}
-                    <div className="grid grid-cols-1 gap-4">
+                    <div className="grid grid-cols-1 gap-3 md:gap-4">
                         {question.options.map((opt, idx) => {
                             let stateStyles = "bg-[#e3dddc]/30 border-transparent hover:bg-[#92a7a3]/10 hover:border-[#92a7a3]/30";
 
@@ -87,15 +87,15 @@ export const Exam = ({ data, onComplete }: Props) => {
                                     disabled={selectedOption !== null}
                                     onClick={() => handleSelect(idx)}
                                     className={`
-                      w-full text-left p-6 md:p-7 rounded-2xl border-2 transition-all duration-300 
-                      text-lg md:text-xl font-body shadow-sm hover:shadow-md
+                      w-full text-left p-4 md:p-7 rounded-xl md:rounded-2xl border-2 transition-all duration-300 
+                      text-base md:text-xl font-body shadow-sm hover:shadow-md
                       flex items-center justify-between gap-4 group
                       ${stateStyles}
                     `}
                                 >
-                                    <div className="flex items-center gap-6">
+                                    <div className="flex items-center gap-4 md:gap-6">
                                         <div className={`
-                            w-10 h-10 rounded-full border-2 flex items-center justify-center font-bold text-lg transition-colors
+                            w-8 h-8 md:w-10 md:h-10 rounded-full border-2 flex items-center justify-center font-bold text-base md:text-lg transition-colors flex-shrink-0
                             ${selectedOption === idx || (selectedOption !== null && idx === question.correctIndex) ? 'border-current bg-current text-white' : 'border-[#7c7a7c]/30 text-[#7c7a7c]/50 group-hover:border-[#92a7a3] group-hover:text-[#92a7a3]'}
                         `}>
                                             {String.fromCharCode(65 + idx)}
@@ -103,8 +103,8 @@ export const Exam = ({ data, onComplete }: Props) => {
                                         <span className="leading-snug">{opt}</span>
                                     </div>
 
-                                    {selectedOption !== null && idx === question.correctIndex && <CheckCircle2 className="w-8 h-8 text-green-600 flex-shrink-0" />}
-                                    {selectedOption !== null && idx === selectedOption && idx !== question.correctIndex && <XCircle className="w-8 h-8 text-red-600 flex-shrink-0" />}
+                                    {selectedOption !== null && idx === question.correctIndex && <CheckCircle2 className="w-6 h-6 md:w-8 md:h-8 text-green-600 flex-shrink-0" />}
+                                    {selectedOption !== null && idx === selectedOption && idx !== question.correctIndex && <XCircle className="w-6 h-6 md:w-8 md:h-8 text-red-600 flex-shrink-0" />}
                                 </button>
                             )
                         })}
@@ -117,9 +117,9 @@ export const Exam = ({ data, onComplete }: Props) => {
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            className="glass-panel p-8 bg-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border-l-8 border-l-[#876d88]"
+                            className="glass-panel p-6 md:p-8 bg-white flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 shadow-xl border-t-8 md:border-t-0 md:border-l-8 border-[#876d88] mb-8 md:mb-0"
                         >
-                            <div className="flex-1">
+                            <div className="flex-1 text-center md:text-left">
                                 <p className="font-display font-bold text-xl text-[#876d88] mb-2">
                                     {isCorrect ? "Goldrichtig!" : "Leider falsch."}
                                 </p>
@@ -127,7 +127,7 @@ export const Exam = ({ data, onComplete }: Props) => {
                             </div>
                             <button
                                 onClick={handleNext}
-                                className="px-10 py-4 bg-[#876d88] text-white font-display font-bold text-lg rounded-full hover:bg-[#876d88]/90 transition-all flex items-center gap-3 shadow-lg whitespace-nowrap"
+                                className="w-full md:w-auto px-8 md:px-10 py-4 bg-[#876d88] text-white font-display font-bold text-lg rounded-full hover:bg-[#876d88]/90 transition-all flex items-center justify-center gap-3 shadow-lg whitespace-nowrap"
                             >
                                 {currentIndex < data.questions.length - 1 ? "Nächste Frage" : "Zur Praxisprüfung"}
                                 <ArrowRight className="w-5 h-5" />

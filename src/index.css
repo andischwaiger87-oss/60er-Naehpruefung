@@ -14,7 +14,7 @@
 
 @layer base {
   body {
-    @apply bg-[#e3dddc] text-[#7c7a7c] font-body antialiased overflow-hidden;
+    @apply bg-[#e3dddc] text-[#7c7a7c] font-body antialiased;
   }
 
   html {

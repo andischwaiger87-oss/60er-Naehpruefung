@@ -36,7 +36,7 @@ export const Practical = ({ data, onComplete }: Props) => {
     };
 
     return (
-        <div className="h-screen bg-[#e3dddc] overflow-y-auto w-full">
+        <div className="min-h-screen bg-[#e3dddc] w-full">
             <div className="min-h-full flex items-center justify-center p-4 md:p-8 py-12">
                 <motion.div
                     key={task.id}
@@ -49,7 +49,7 @@ export const Practical = ({ data, onComplete }: Props) => {
                         <span className="text-[#92a7a3] font-bold tracking-[0.2em] uppercase text-xs md:text-sm block mb-2">
                             Praxis-Station {currentTaskIndex + 1}
                         </span>
-                        <h2 className="text-4xl md:text-6xl font-display font-medium text-[#876d88] leading-tight">
+                        <h2 className="text-3xl md:text-6xl font-display font-medium text-[#876d88] leading-tight">
                             {task.title}
                         </h2>
                     </div>
@@ -61,7 +61,7 @@ export const Practical = ({ data, onComplete }: Props) => {
                     </p>
 
                     {task.items && (
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 w-full mb-10">
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 w-full mb-10">
                             {task.items.map((item, idx) => {
                                 const isRevealed = revealedItems.includes(item.text);
                                 return (
@@ -70,7 +70,7 @@ export const Practical = ({ data, onComplete }: Props) => {
                                         onClick={() => toggleReveal(item.text)}
                                         disabled={isRevealed}
                                         className={`
-                                h-40 md:h-48 rounded-2xl border-4 transition-all duration-300
+                                h-32 sm:h-40 md:h-48 rounded-2xl border-4 transition-all duration-300
                                 relative overflow-hidden group font-display shadow-sm
                                 ${isRevealed
                                                 ? "border-[#92a7a3] scale-95 opacity-100"
@@ -90,7 +90,7 @@ export const Practical = ({ data, onComplete }: Props) => {
 
                                         {/* Overlay Label */}
                                         <div className="absolute top-0 left-0 p-2 md:p-3 bg-white/90 backdrop-blur-md rounded-br-2xl shadow-sm z-10 border-b border-r border-[#92a7a3]/20">
-                                            <span className={`font-bold text-sm md:text-base ${isRevealed ? "text-[#92a7a3]" : "text-[#7c7a7c]"}`}>
+                                            <span className={`font-bold text-xs md:text-base ${isRevealed ? "text-[#92a7a3]" : "text-[#7c7a7c]"}`}>
                                                 {item.text}
                                             </span>
                                         </div>
@@ -99,7 +99,7 @@ export const Practical = ({ data, onComplete }: Props) => {
                                         {isRevealed && (
                                             <div className="absolute inset-0 z-20 bg-[#92a7a3]/40 flex items-center justify-center backdrop-blur-[1px]">
                                                 <div className="bg-white rounded-full p-2 shadow-lg scale-100 transition-transform">
-                                                    <Check className="w-8 h-8 md:w-10 md:h-10 text-[#92a7a3] stroke-[3]" />
+                                                    <Check className="w-6 h-6 md:w-10 md:h-10 text-[#92a7a3] stroke-[3]" />
                                                 </div>
                                             </div>
                                         )}
@@ -112,17 +112,17 @@ export const Practical = ({ data, onComplete }: Props) => {
                     {/* Timed Task Mode */}
                     {task.duration && (
                         <div className="flex flex-col items-center gap-6 mb-12">
-                            <div className="w-56 h-56 rounded-full border-[12px] border-[#e3dddc] flex items-center justify-center animate-pulse bg-white relative">
-                                <div className="absolute inset-0 rounded-full border-[12px] border-[#876d88] border-t-transparent animate-spin duration-[3000ms]" />
-                                <Timer className="w-24 h-24 text-[#876d88]" />
+                            <div className="w-40 h-40 md:w-56 md:h-56 rounded-full border-[8px] md:border-[12px] border-[#e3dddc] flex items-center justify-center animate-pulse bg-white relative">
+                                <div className="absolute inset-0 rounded-full border-[8px] md:border-[12px] border-[#876d88] border-t-transparent animate-spin duration-[3000ms]" />
+                                <Timer className="w-16 h-16 md:w-24 md:h-24 text-[#876d88]" />
                             </div>
-                            <p className="text-4xl text-[#876d88] font-display font-bold">Die Zeit läuft!</p>
+                            <p className="text-2xl md:text-4xl text-[#876d88] font-display font-bold">Die Zeit läuft!</p>
                         </div>
                     )}
 
                     <button
                         onClick={handleNext}
-                        className="px-10 py-5 bg-[#876d88] text-white rounded-full font-display font-bold text-xl md:text-2xl flex items-center gap-4 hover:scale-105 transition-transform shadow-xl hover:bg-[#876d88]/90 mt-auto"
+                        className="px-8 py-4 md:px-10 md:py-5 bg-[#876d88] text-white rounded-full font-display font-bold text-lg md:text-2xl flex items-center gap-4 hover:scale-105 transition-transform shadow-xl hover:bg-[#876d88]/90 mt-auto"
                     >
                         <span>{currentTaskIndex < data.tasks.length - 1 ? "Nächste Aufgabe" : "Abschließen & Urkunde"}</span>
                         <ArrowRight className="w-6 h-6 md:w-8 md:h-8" />
